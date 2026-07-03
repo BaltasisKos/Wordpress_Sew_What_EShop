@@ -19,14 +19,14 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
   border-right: 1px solid #ccd0d4;
   border-bottom: 1px solid #ccd0d4;
   border-left: 4px solid #f15d30;
-  background: #fff url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-warning.svg) no-repeat 25px 28px;
+  background: #fff url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-warning.svg) no-repeat 25px 28px;
   background-size: 32px; }
   .otgs-installer-notice a,
   .notice.otgs-installer-notice a {
     cursor: pointer; }
   .otgs-installer-notice.otgs-installer-notice-info,
   .notice.otgs-installer-notice.otgs-installer-notice-info {
-    background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-info.svg);
+    background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-info.svg);
     background-position-y: 50%; }
     @media (max-width: 768px) {
       .otgs-installer-notice.otgs-installer-notice-info,
@@ -34,7 +34,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
         background-image: none !important; } }
   .otgs-installer-notice.otgs-installer-notice-confirm,
   .notice.otgs-installer-notice.otgs-installer-notice-confirm {
-    background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-confirm.svg);
+    background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-confirm.svg);
     background-position-y: 50%; }
     .otgs-installer-notice.otgs-installer-notice-confirm .otgs-installer-notice-status-item-link-unregister,
     .notice.otgs-installer-notice.otgs-installer-notice-confirm .otgs-installer-notice-status-item-link-unregister {
@@ -105,7 +105,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
           width: 15px;
           height: 16px;
           margin-left: 8px;
-          background: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refresh.png) no-repeat 0 0; }
+          background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refresh.png) no-repeat 0 0; }
         .otgs-installer-notice .otgs-installer-notice-status-item-link:hover, .notice.otgs-installer-notice .otgs-installer-notice-status-item-link:hover {
           color: #f15d30;
           opacity: 0.8; }
@@ -122,7 +122,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
         .otgs-installer-notice .otgs-installer-notice-status a, .notice.otgs-installer-notice .otgs-installer-notice-status a {
           margin-left: 0; } }
   .otgs-installer-notice.otgs-installer-notice-wpml, .notice.otgs-installer-notice.otgs-installer-notice-wpml {
-    background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-warning.svg); }
+    background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-warning.svg); }
     .otgs-installer-notice.otgs-installer-notice-wpml:before, .notice.otgs-installer-notice.otgs-installer-notice-wpml:before {
       content: '';
       position: absolute;
@@ -132,15 +132,15 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
       width: 4px;
       background: linear-gradient(to bottom, #27ad95 0%, #2782ad 100%); }
     .otgs-installer-notice.otgs-installer-notice-wpml.otgs-installer-notice-info, .otgsi_register_product_wrap .otgs-installer-notice.otgs-installer-notice-wpml.otgs-installer-notice-info, .notice.otgs-installer-notice.otgs-installer-notice-wpml.otgs-installer-notice-info, .otgsi_register_product_wrap .notice.otgs-installer-notice.otgs-installer-notice-wpml.otgs-installer-notice-info {
-      background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-info.svg) !important; }
+      background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-info.svg) !important; }
     .otgs-installer-notice.otgs-installer-notice-wpml.otgs-installer-notice-confirm, .otgsi_register_product_wrap .otgs-installer-notice.otgs-installer-notice-wpml.otgs-installer-notice-confirm, .notice.otgs-installer-notice.otgs-installer-notice-wpml.otgs-installer-notice-confirm, .otgsi_register_product_wrap .notice.otgs-installer-notice.otgs-installer-notice-wpml.otgs-installer-notice-confirm {
-      background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-confirm.svg); }
+      background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-confirm.svg); }
     .otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status-item-link, .notice.otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status-item-link {
       color: #33879e; }
       .otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status-item-link-refresh:after, .notice.otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status-item-link-refresh:after {
-        background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-refresh.png); }
+        background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-refresh.png); }
     .otgsi_register_product_wrap .otgs-installer-notice.otgs-installer-notice-wpml, .otgsi_register_product_wrap .notice.otgs-installer-notice.otgs-installer-notice-wpml {
-      background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-warning.svg); }
+      background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-wpml-warning.svg); }
       .otgsi_register_product_wrap .otgs-installer-notice.otgs-installer-notice-wpml:before, .otgsi_register_product_wrap .notice.otgs-installer-notice.otgs-installer-notice-wpml:before {
         display: none; }
       .otgsi_register_product_wrap .otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-content h2, .otgsi_register_product_wrap .notice.otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-content h2 {
@@ -158,13 +158,13 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
           color: #666; }
           .otgsi_register_product_wrap .otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status .otgs-installer-notice-status-item-btn-refresh, .otgsi_register_product_wrap .notice.otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status .otgs-installer-notice-status-item-btn-refresh {
             padding: 9px 40px 9px 15px;
-            background: #ddd url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-notice-refresh.png) no-repeat 94% 50%; }
+            background: #ddd url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-notice-refresh.png) no-repeat 94% 50%; }
             .otgsi_register_product_wrap .otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status .otgs-installer-notice-status-item-btn-refresh strong, .otgsi_register_product_wrap .notice.otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status .otgs-installer-notice-status-item-btn-refresh strong {
               display: inline-block;
               padding-right: 15px;
               border-right: 1px solid #ccc; }
             .otgsi_register_product_wrap .otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status .otgs-installer-notice-status-item-btn-refresh:hover, .otgsi_register_product_wrap .notice.otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status .otgs-installer-notice-status-item-btn-refresh:hover {
-              background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-white-refresh.png); }
+              background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-white-refresh.png); }
           .otgsi_register_product_wrap .otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status .otgs-installer-notice-status-item-btn:hover, .otgsi_register_product_wrap .notice.otgs-installer-notice.otgs-installer-notice-wpml .otgs-installer-notice-status .otgs-installer-notice-status-item-btn:hover {
             background-color: #666;
             color: #fff; }
@@ -178,7 +178,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
     position: relative;
     display: flex;
     border: 0;
-    background: #c9471f url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-info.png) no-repeat 25px 25px;
+    background: #c9471f url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-info.png) no-repeat 25px 25px;
     color: #fff; }
     .otgs-installer-notice.otgs-installer-notice-refund:before, .notice.otgs-installer-notice.otgs-installer-notice-refund:before {
       display: none; }
@@ -189,7 +189,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
     .otgs-installer-notice.otgs-installer-notice-refund .otgs-installer-notice-status-item-btn, .notice.otgs-installer-notice.otgs-installer-notice-refund .otgs-installer-notice-status-item-btn {
       color: #c9471f;
       padding: 9px 40px 9px 15px;
-      background: #fff url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-refresh.png) no-repeat 94% 50%; }
+      background: #fff url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-refresh.png) no-repeat 94% 50%; }
       .otgs-installer-notice.otgs-installer-notice-refund .otgs-installer-notice-status-item-btn strong, .notice.otgs-installer-notice.otgs-installer-notice-refund .otgs-installer-notice-status-item-btn strong {
         display: inline-block;
         padding-right: 15px;
@@ -242,7 +242,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
     position: relative;
     display: block;
     border: 0;
-    background: #c9471f url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-info.png) no-repeat 25px 25px;
+    background: #c9471f url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-info.png) no-repeat 25px 25px;
     color: #fff; }
     .otgs-installer-notice.otgs-installer-notice-expired.otgs-installer-notice-expired-gd, .notice.otgs-installer-notice.otgs-installer-notice-expired.otgs-installer-notice-expired-gd {
       padding: 30px;
@@ -259,7 +259,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
           .otgs-installer-notice.otgs-installer-notice-expired.otgs-installer-notice-expired-gd .otgs-installer-notice-content__one h2, .notice.otgs-installer-notice.otgs-installer-notice-expired.otgs-installer-notice-expired-gd .otgs-installer-notice-content__one h2 {
             margin-bottom: .3em;
             padding: .2em 0;
-            background: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-info-notice.svg) no-repeat 0 50%;
+            background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-info-notice.svg) no-repeat 0 50%;
             background-size: 20px;
             padding-left: 30px; }
           .otgs-installer-notice.otgs-installer-notice-expired.otgs-installer-notice-expired-gd .otgs-installer-notice-content__one .otgs-installer-notice-status-item-link-unregister, .notice.otgs-installer-notice.otgs-installer-notice-expired.otgs-installer-notice-expired-gd .otgs-installer-notice-content__one .otgs-installer-notice-status-item-link-unregister {
@@ -291,7 +291,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
             border: 1px solid #fff;
             border-radius: 5px;
             padding: 8px 15px 8px 35px;
-            background: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-white-refresh.png) no-repeat 10px 45%; }
+            background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-white-refresh.png) no-repeat 10px 45%; }
             .otgs-installer-notice.otgs-installer-notice-expired.otgs-installer-notice-expired-gd .otgs-installer-notice-content__two a.update_site_key_js:hover, .notice.otgs-installer-notice.otgs-installer-notice-expired.otgs-installer-notice-expired-gd .otgs-installer-notice-content__two a.update_site_key_js:hover {
               background-color: rgba(255, 255, 255, 0.3);
               border-color: rgba(255, 255, 255, 0.05); }
@@ -306,7 +306,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
     .otgs-installer-notice.otgs-installer-notice-expired:before, .notice.otgs-installer-notice.otgs-installer-notice-expired:before {
       display: none; }
     .otgs-installer-notice.otgs-installer-notice-expired .spinner, .notice.otgs-installer-notice.otgs-installer-notice-expired .spinner {
-      background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/spinner-white.gif); }
+      background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/spinner-white.gif); }
     .otgs-installer-notice.otgs-installer-notice-expired .otgs-installer-notice-content, .notice.otgs-installer-notice.otgs-installer-notice-expired .otgs-installer-notice-content {
       color: #fff; }
       .otgs-installer-notice.otgs-installer-notice-expired .otgs-installer-notice-content h2, .notice.otgs-installer-notice.otgs-installer-notice-expired .otgs-installer-notice-content h2 {
@@ -320,7 +320,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
           width: 20px;
           height: 20px;
           opacity: 0.8;
-          background: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-white-refresh.png) no-repeat 50% 50%;
+          background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-white-refresh.png) no-repeat 50% 50%;
           margin-left: 10px; }
           .otgs-installer-notice.otgs-installer-notice-expired .otgs-installer-notice-content h2 .update_site_key_js:hover, .notice.otgs-installer-notice.otgs-installer-notice-expired .otgs-installer-notice-content h2 .update_site_key_js:hover {
             opacity: 1; }
@@ -397,7 +397,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
       .otgs-installer-notice.otgs-installer-notice-registered .otgs-installer-notice-content .otgs-installer-notice-status-item-btn, .notice.otgs-installer-notice.otgs-installer-notice-registered .otgs-installer-notice-content .otgs-installer-notice-status-item-btn {
         color: #c9471f;
         padding: 9px 40px 9px 15px;
-        background: #ddd url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-notice-refresh.png) no-repeat 94% 50%; }
+        background: #ddd url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-notice-refresh.png) no-repeat 94% 50%; }
         .otgs-installer-notice.otgs-installer-notice-registered .otgs-installer-notice-content .otgs-installer-notice-status-item-btn strong, .notice.otgs-installer-notice.otgs-installer-notice-registered .otgs-installer-notice-content .otgs-installer-notice-status-item-btn strong {
           display: inline-block;
           padding-right: 15px;
@@ -450,7 +450,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
     display: inline-block;
     width: 25px;
     height: 20px;
-    background: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-warning.svg) no-repeat 0 0;
+    background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-warning.svg) no-repeat 0 0;
     background-size: 20px; }
   .notice-otgs p a,
   .notice.notice-otgs p a {
@@ -470,7 +470,7 @@ li#wp-admin-bar-otgs-wpml-development, li#wp-admin-bar-otgs-wpml-development:hov
       color: #fff; }
       .notice-otgs-refund p:before,
       .notice.notice-otgs-refund p:before {
-        background-image: url(/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-info-notice.svg); }
+        background-image: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon-refund-info-notice.svg); }
       .notice-otgs-refund p a,
       .notice.notice-otgs-refund p a {
         color: #fff; }
