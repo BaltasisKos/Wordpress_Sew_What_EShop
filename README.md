@@ -29,8 +29,7 @@ As the developer of this project, I handled the implementation, configuration, a
 
 💡 *If the site is live, add the link below to impress recruiters!*
 
-*   🌐 **Live Website:** [View Live Demo]([http://localhost/test_sewwhat/](https://baltasiskos.github.io/Wordpress_Sew_What_EShop/)) *(Localhost Link)*
-
+*   🌐 **Live Website:** [View Live Demo](https://baltasiskos.github.io/Wordpress_Sew_What_EShop/)
 ## ⚙️ Repository Structure
 
 This repository contains the core components of the WordPress setup, including:
