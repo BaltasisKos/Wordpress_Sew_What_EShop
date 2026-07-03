@@ -1,0 +1,14 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* =========================================================
+   8. TESTIMONIALS
+   ========================================================= */
+.testimonials{padding:100px 0;background:var(--paper-2);}
+.t-card{
+  background:var(--card);border:1px solid var(--line);padding:34px;
+  min-height:230px;display:flex;flex-direction:column;justify-content:space-between;
+}
+.t-stars{color:var(--thread);letter-spacing:2px;margin-bottom:14px;}
+.t-quote{font-family:'Inter';font-size:15px;line-height:1.65;color:var(--ink);}
+.t-name{font-family:'Space Mono',monospace;font-size:12px;margin-top:18px;color:var(--ink-soft);text-transform:uppercase;}</style>
+<!-- end Simple Custom CSS and JS -->

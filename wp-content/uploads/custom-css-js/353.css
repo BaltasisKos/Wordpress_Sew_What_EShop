@@ -1,0 +1,24 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* =========================================================
+   11. FOOTER
+   ========================================================= */
+footer{padding:70px 0 30px;}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:40px;
+  padding-bottom:60px;border-bottom:1px solid var(--line);
+}
+.footer-grid img{height:98px;margin-bottom:16px;}
+.footer-grid p{color:var(--ink-soft);font-size:13px;max-width:240px;line-height:1.6;}
+.footer-col h5{
+  font-family:'Space Mono',monospace;font-size:12px;text-transform:uppercase;
+  letter-spacing:.08em;margin-bottom:16px;
+}
+.footer-col a{display:block;font-size:14px;color:var(--ink-soft);padding:5px 0;transition:color .25s;}
+.footer-col a:hover{color:var(--thread);}
+.footer-bottom{
+  display:flex;justify-content:space-between;align-items:center;padding-top:24px;
+  font-family:'Space Mono',monospace;font-size:11px;color:var(--ink-soft);flex-wrap:wrap;gap:14px;
+}
+@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;}}</style>
+<!-- end Simple Custom CSS and JS -->

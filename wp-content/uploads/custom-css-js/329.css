@@ -1,0 +1,266 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* =========================================================
+   3. HERO & HERO SPLIT (Διαδοχικά Μπλοκ)
+   ========================================================= */
+.hero {
+  position: relative;
+  width: 100% !important;     /* Αναγκάζει το hero να πιάσει όλο το πλάτος */
+  max-width: 100% !important; /* Σπάει τα όρια του Twenty Twenty-Five */
+  margin: 0 auto !important;  /* Κεντράρει το container αν χρειαστεί */
+  
+  /* Το δικό σου ύψος */
+  height: calc(100vh - 110px); 
+  min-height: 600px;
+  
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Ο κουβάς των κειμένων */
+.hero-content {
+  position: relative;
+  z-index: 10 !important; /* Αυξημένο z-index για να βγει σίγουρα πάνω από το overlay */
+  max-width: 850px;
+  padding: 0 24px;
+}
+
+.hero-title {
+  font-size: clamp(58px, 12vw, 70px);
+  position: relative;
+  display: inline-block;
+  color: var(--paper-2) !important;
+  opacity: 1 !important;              /* Ξεκλειδώνει το opacity */
+  text-shadow: 0 3px 18px rgba(0,0,0,0.6) !important; /* Σκιά για βάθος */
+}
+.hero-title .needle-svg {
+  position: absolute;
+  top: 38%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-6deg);
+  width: 60%;
+  max-width: 640px;
+  pointer-events: none;
+}
+.hero-title .needle-svg path {
+  fill: none; stroke: var(--ink); stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+}
+.hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: var(--card) !important;
+  opacity: 1 !important;              /* Ξεκλειδώνει το opacity */
+  max-width: 520px;
+  margin: 22px auto 34px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6) !important;
+}
+.hero-cta {
+  display: flex; 
+  gap: 16px; 
+  justify-content: center; 
+  flex-wrap: wrap !important;
+  opacity: 1 !important;              /* Ξεκλειδώνει τα κουμπιά */
+}
+
+/* 🛠️ ΔΙΟΡΘΩΣΗ: Προσθήκη !important και στα Hovers για να δουλεύουν οι εναλλαγές */
+.hero .btn {
+  border-color: #f4f4f4 !important;
+  color: #000000 !important;
+  background: #ffc687;
+  opacity: 1 !important;
+}
+.hero .btn.solid {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+.hero .btn.solid:hover {
+  background: var(--thread) !important;
+  border-color: var(--thread) !important;
+  color: #ffffff !important;
+}
+.hero .btn:not(.solid):hover {
+  background: #ffffff !important;
+  color: #17130F !important;
+}
+
+/* To Background Βίντεο (Κλειδώνει αυστηρά στο πρώτο θέμα) */
+/* Το CSS για το Βίντεο - Με έξυπνο κροπάρισμα για να κρύβει το watermark */
+.hero-bg-video {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  
+  /* 👈 Δίνουμε 5% παραπάνω ύψος στο βίντεο ώστε να μεγαλώσει και να σπρώξει το watermark εκτός οθόνης */
+  height: 125%; 
+  
+  /* 👈 Στοιχίζουμε το βίντεο στην κορυφή (top) ώστε όλο το περίσσιο ύψος (μαζί με το watermark) να βγει από κάτω */
+  object-position: center top; 
+  
+  object-fit: cover; 
+  z-index: 1; 
+  pointer-events: none; 
+}
+.hero-video-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.35) !important; /* Ελαφρώς πιο ενισχυμένο overlay για καλύτερη αντίθεση */
+  z-index: 2; /* Πίσω από το content, πάνω από το video */
+}
+
+/* ---------------------------------------------------------
+   ΔΕΥΤΕΡΟ ΘΕΜΑ: HERO SPLIT (Απλώνει αυτόνομα από κάτω)
+   --------------------------------------------------------- */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0; /* 🛠️ Διορθώθηκε από 2px σε 0 για να έρθει το κάτω μέρος στην ίδια ευθεία */
+  background: var(--ink);
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hero-panel {
+  position: relative;
+  /* Δίνει σταθερό, όμορφο responsive ύψος στις εικόνες ανάλογα με την οθόνη */
+  height: 75vh; 
+  min-height: 950px;
+  max-height: 700px;
+  overflow: hidden;
+  isolation: isolate;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  /* 🛠️ ΠΡΟΣΘΗΚΗ: Κλείδωμα opacity και μετατόπισης (με διόρθωση από 3.px σε 3px) */
+  opacity: 0.9346 !important;
+  transform: translate(0px, 3px) !important;
+  translate: none;
+  rotate: none;
+  scale: none;
+}
+
+.hero-panel img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  transition: transform .8s var(--ease);
+  display: block;
+}
+
+.hero-panel:hover img { 
+  transform: scale(1.05); 
+}
+
+/* Το container των κειμένων */
+.hero-panel .panel-tag {
+  position: absolute; 
+  left: 40px; 
+  bottom: 40px;
+  z-index: 4;
+  width: calc(100% - 80px); /* Δίνει χώρο στα κείμενα να απλωθούν σωστά */
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 01 - WOMEN / 02 - MEN (Μικρά γράμματα κάτω αριστερά) */
+.hero-panel .panel-tag .eyebrow { 
+  color: #ffc687 !important; /* 🛠️ Διορθώθηκε το τυπογραφικό #fffff */
+  opacity: 1 !important; /* Μένει πάντα καθαρό και ορατό */
+  visibility: visible !important;
+}
+
+/* ΓΥΝΑΙΚΕΙΑ / ΑΝΔΡΙΚΑ (Μεγάλα έντονα γράμματα) */
+.hero-panel .panel-tag h3 { 
+  font-size: clamp(28px, 4vw, 44px); 
+  color: #ffffff !important; /* 🛠️ Διορθώθηκε το τυπογραφικό #fffff */
+  opacity: 0.93 !important;      /* 🛠️ Φωτεινά και έντονα, αλλά κρατάνε το split-opacity visual που θες */
+  visibility: visible !important;
+  /* ❌ Αφαιρέθηκε το opacity: 1 !important για να επιτρέψουμε στο GSAP 
+     να κάνει το fade-in και να κρατήσει την ημιδιαφάνεια που θες */
+}
+
+/* Το σκοτεινό overlay στην εικόνα για να ξεχωρίζουν τα λευκά γράμματα */
+.hero-panel::after {
+  content: ""; 
+  position: absolute; 
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.65) 100%) !important;
+  z-index: 2;
+  opacity: 1 !important; /* Κλειδώνει το gradient για να υπάρχει πάντα αντίθεση */
+}
+
+/* 🛠️ ΝΕΟΣ ΚΕΝΤΡΙΚΟΣ ΤΙΤΛΟΣ (Όπως στο image_89eade.png) */
+.hero-panel .center-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Απόλυτο κεντράρισμα */
+  z-index: 3; /* Πάνω από την εικόνα και το overlay, κάτω από το panel-tag αν χρειαστεί */
+  color: #ffffff;
+  font-size: clamp(36px, 6vw, 72px); /* Δυναμικό μέγεθος ανάλογα με την οθόνη */
+  font-weight: 400; /* Ή 500 ανάλογα με τη γραμματοσειρά σου */
+  letter-spacing: -0.02em;
+  pointer-events: none; /* Για να μην εμποδίζει το κλικ στο link */
+  text-align: center;
+  width: 90%;
+  margin: 0;
+  opacity: 0.9; /* Ελαφριά διαφάνεια για blend με το background */
+}
+
+/* =========================================================
+   ΚΛΕΙΔΩΜΑ FULL WIDTH & ΔΙΟΡΘΩΣΗ ΔΕΞΙΟΥ ΚΕΝΟΥ (PATCH)
+   ========================================================= */
+
+/* 1. Αναγκάζουμε το ίδιο το site να μην επιτρέπει οριζόντιο σπάσιμο/κενό */
+html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.elementor-12 .elementor-element.elementor-element-10ac147 {
+    margin: -12px -11px calc(var(--kit-widget-spacing, 0px) + -11px) 0px !important;
+}
+
+/* 2. Σπάσιμο των FSE Containers του Twenty Twenty-Five χωρίς 100vw κινδύνους */
+.wp-site-blocks, 
+.wp-block-post-content, 
+.entry-content,
+main#primary,
+.elementor-section-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* 3. Διόρθωση του Hero: Χρήση ποσοστών (%) αντί για vw για να μην "κλωτσάει" η scrollbar */
+.hero, .hero-split {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* 4. Αν ο Elementor έχει "Boxed" ρυθμίσεις στον Container, τον εξαναγκάζουμε σε Full */
+.elementor-container, .e-con, .e-con-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->

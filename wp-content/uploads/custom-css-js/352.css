@@ -1,0 +1,20 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* =========================================================
+   10. NEWSLETTER
+   ========================================================= */
+.newsletter{
+  background:var(--ink);color:var(--paper);
+  padding:100px 32px;text-align:center;
+}
+.newsletter h2{font-size:clamp(30px,5vw,54px);color:var(--paper);}
+.newsletter p{color:#C9C3B6;max-width:460px;margin:16px auto 30px;}
+.nl-form{display:flex;justify-content:center;gap:0;max-width:440px;margin:0 auto;border-bottom:1.5px solid var(--paper);padding-bottom:10px;}
+.nl-form input{
+  flex:1;background:transparent;border:none;outline:none;
+  color:var(--paper);font-family:'Space Mono',monospace;font-size:14px;padding:8px;
+}
+.nl-form input::placeholder{color:#8f897a;}
+.nl-form button{background:none;border:none;color:var(--paper);}
+.nl-form svg{width:22px;height:22px;stroke:var(--paper);fill:none;stroke-width:1.6;}</style>
+<!-- end Simple Custom CSS and JS -->

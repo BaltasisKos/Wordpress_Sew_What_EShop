@@ -1,0 +1,19 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* =========================================================
+   5. FEATURE STRIP
+   ========================================================= */
+.features{
+  background:var(--ink);color:var(--paper);
+  padding:60px 0;
+}
+.feature-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:30px;
+}
+.feature-item{text-align:center;padding:0 10px;}
+.feature-item svg{width:34px;height:34px;stroke:var(--paper);fill:none;stroke-width:1.4;margin-bottom:14px;}
+.feature-item h4{font-family:'Archivo',sans-serif;font-size:15px;text-transform:uppercase;margin-bottom:6px;}
+.feature-item p{font-family:'Inter';font-size:13px;color:#C9C3B6;margin:0;}
+@media(max-width:900px){.feature-grid{grid-template-columns:repeat(2,1fr);row-gap:40px;}}
+</style>
+<!-- end Simple Custom CSS and JS -->

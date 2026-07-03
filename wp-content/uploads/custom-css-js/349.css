@@ -1,0 +1,73 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* =========================================================
+   6. EDITORIAL / LOOKBOOK (GSAP pin)
+   ========================================================= */
+.editorial {
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F2EEE4; /* Βάλε το background της σελίδας σου */
+  display: block; /* SOS: Αλλαγή για να δουλέψει σωστά το GSAP */
+  overflow: hidden; /* SOS: Μεταφέρθηκε εδώ για να κρατάει το pin spacer καθαρό */
+}
+
+.editorial-head {
+  max-width: 640px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.editorial-head h2 {
+  font-size: clamp(32px, 5vw, 54px);
+  margin-top: 14px;
+}
+
+.editorial-head p {
+  color: var(--ink-soft);
+  margin-top: 16px;
+}
+
+.editorial-pin {
+  overflow: hidden !important; /* SOS: Κρύβει τα slides που βγαίνουν δεξιά */
+}
+
+.wrap-editorial {
+  width: 100%;
+  position: relative;
+/*   padding-left: 10vw; Δίνει ένα όμορφο ξεκίνημα στο scroll */
+  box-sizing: border-box;
+}
+
+.edit-track {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important; /* SOS: Αναγκάζει τα slides να μείνουν σε μία ευθεία */
+  align-items: flex-start; /* SOS: Αποτρέπει το stretch που σπάει τα ύψη */
+  gap: 24px;
+  width: max-content !important; /* SOS: Απλώνει το track όσο χρειάζεται */
+  will-change: transform;
+}
+
+.edit-slide {
+  flex: 0 0 auto !important; /* SOS: Δεν επιτρέπει στα slides να στενέψουν */
+  width: min(72vw, 560px);
+  position: relative;
+}
+
+.edit-slide img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  width: 100%;
+}
+
+.edit-slide .cap {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--ink-soft);
+}</style>
+<!-- end Simple Custom CSS and JS -->

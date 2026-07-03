@@ -1,0 +1,62 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* =========================================================
+   7. FABRIC LABEL / BRAND STORY
+   ========================================================= */
+/* SOS: Ο νέος wrapper που λειτουργεί σαν ασπίδα */
+.story-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both !important;
+  background-color: #F2EEE4;
+  z-index: 5;
+  overflow: hidden; /* SOS: Εμποδίζει το "σπάσιμο" της σελίδας δεξιά-αριστερά κατά το animation */
+}
+
+.story {
+  padding: 110px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.story img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.story-copy h2 {
+  font-size: clamp(30px, 4.5vw, 50px);
+  margin: 14px 0 20px;
+}
+
+.story-copy p {
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin-bottom: 26px;
+  max-width: 460px;
+}
+
+.label-tag {
+  border: 1px dashed var(--ink);
+  padding: 18px 20px;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+
+.label-tag b {
+  color: var(--ink);
+}
+
+@media(max-width:900px) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+}</style>
+<!-- end Simple Custom CSS and JS -->

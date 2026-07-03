@@ -1,0 +1,637 @@
+/* =========================================================
+   11. FOOTER
+   ========================================================= */
+footer{padding:70px 0 30px;}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:40px;
+  padding-bottom:60px;border-bottom:1px solid var(--line);
+}
+.footer-grid img{height:98px;margin-bottom:16px;}
+.footer-grid p{color:var(--ink-soft);font-size:13px;max-width:240px;line-height:1.6;}
+.footer-col h5{
+  font-family:'Space Mono',monospace;font-size:12px;text-transform:uppercase;
+  letter-spacing:.08em;margin-bottom:16px;
+}
+.footer-col a{display:block;font-size:14px;color:var(--ink-soft);padding:5px 0;transition:color .25s;}
+.footer-col a:hover{color:var(--thread);}
+.footer-bottom{
+  display:flex;justify-content:space-between;align-items:center;padding-top:24px;
+  font-family:'Space Mono',monospace;font-size:11px;color:var(--ink-soft);flex-wrap:wrap;gap:14px;
+}
+@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;}}
+/* =========================================================
+   10. NEWSLETTER
+   ========================================================= */
+.newsletter{
+  background:var(--ink);color:var(--paper);
+  padding:100px 32px;text-align:center;
+}
+.newsletter h2{font-size:clamp(30px,5vw,54px);color:var(--paper);}
+.newsletter p{color:#C9C3B6;max-width:460px;margin:16px auto 30px;}
+.nl-form{display:flex;justify-content:center;gap:0;max-width:440px;margin:0 auto;border-bottom:1.5px solid var(--paper);padding-bottom:10px;}
+.nl-form input{
+  flex:1;background:transparent;border:none;outline:none;
+  color:var(--paper);font-family:'Space Mono',monospace;font-size:14px;padding:8px;
+}
+.nl-form input::placeholder{color:#8f897a;}
+.nl-form button{background:none;border:none;color:var(--paper);}
+.nl-form svg{width:22px;height:22px;stroke:var(--paper);fill:none;stroke-width:1.6;}
+/* =========================================================
+   8. TESTIMONIALS
+   ========================================================= */
+.testimonials{padding:100px 0;background:var(--paper-2);}
+.t-card{
+  background:var(--card);border:1px solid var(--line);padding:34px;
+  min-height:230px;display:flex;flex-direction:column;justify-content:space-between;
+}
+.t-stars{color:var(--thread);letter-spacing:2px;margin-bottom:14px;}
+.t-quote{font-family:'Inter';font-size:15px;line-height:1.65;color:var(--ink);}
+.t-name{font-family:'Space Mono',monospace;font-size:12px;margin-top:18px;color:var(--ink-soft);text-transform:uppercase;}
+/* =========================================================
+   7. FABRIC LABEL / BRAND STORY
+   ========================================================= */
+/* SOS: Ο νέος wrapper που λειτουργεί σαν ασπίδα */
+.story-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both !important;
+  background-color: #F2EEE4;
+  z-index: 5;
+  overflow: hidden; /* SOS: Εμποδίζει το "σπάσιμο" της σελίδας δεξιά-αριστερά κατά το animation */
+}
+
+.story {
+  padding: 110px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.story img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.story-copy h2 {
+  font-size: clamp(30px, 4.5vw, 50px);
+  margin: 14px 0 20px;
+}
+
+.story-copy p {
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin-bottom: 26px;
+  max-width: 460px;
+}
+
+.label-tag {
+  border: 1px dashed var(--ink);
+  padding: 18px 20px;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+
+.label-tag b {
+  color: var(--ink);
+}
+
+@media(max-width:900px) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================================
+   6. EDITORIAL / LOOKBOOK (GSAP pin)
+   ========================================================= */
+.editorial {
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F2EEE4; /* Βάλε το background της σελίδας σου */
+  display: block; /* SOS: Αλλαγή για να δουλέψει σωστά το GSAP */
+  overflow: hidden; /* SOS: Μεταφέρθηκε εδώ για να κρατάει το pin spacer καθαρό */
+}
+
+.editorial-head {
+  max-width: 640px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.editorial-head h2 {
+  font-size: clamp(32px, 5vw, 54px);
+  margin-top: 14px;
+}
+
+.editorial-head p {
+  color: var(--ink-soft);
+  margin-top: 16px;
+}
+
+.editorial-pin {
+  overflow: hidden !important; /* SOS: Κρύβει τα slides που βγαίνουν δεξιά */
+}
+
+.wrap-editorial {
+  width: 100%;
+  position: relative;
+/*   padding-left: 10vw; Δίνει ένα όμορφο ξεκίνημα στο scroll */
+  box-sizing: border-box;
+}
+
+.edit-track {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important; /* SOS: Αναγκάζει τα slides να μείνουν σε μία ευθεία */
+  align-items: flex-start; /* SOS: Αποτρέπει το stretch που σπάει τα ύψη */
+  gap: 24px;
+  width: max-content !important; /* SOS: Απλώνει το track όσο χρειάζεται */
+  will-change: transform;
+}
+
+.edit-slide {
+  flex: 0 0 auto !important; /* SOS: Δεν επιτρέπει στα slides να στενέψουν */
+  width: min(72vw, 560px);
+  position: relative;
+}
+
+.edit-slide img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  width: 100%;
+}
+
+.edit-slide .cap {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--ink-soft);
+}
+/* =========================================================
+   5. FEATURE STRIP
+   ========================================================= */
+.features{
+  background:var(--ink);color:var(--paper);
+  padding:60px 0;
+}
+.feature-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:30px;
+}
+.feature-item{text-align:center;padding:0 10px;}
+.feature-item svg{width:34px;height:34px;stroke:var(--paper);fill:none;stroke-width:1.4;margin-bottom:14px;}
+.feature-item h4{font-family:'Archivo',sans-serif;font-size:15px;text-transform:uppercase;margin-bottom:6px;}
+.feature-item p{font-family:'Inter';font-size:13px;color:#C9C3B6;margin:0;}
+@media(max-width:900px){.feature-grid{grid-template-columns:repeat(2,1fr);row-gap:40px;}}
+
+/* =========================================================
+   4. CATEGORY TABS + SWIPER PRODUCTS
+   ========================================================= */
+.shop-section{padding:110px 0 40px;}
+.shop-head{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  margin-bottom:40px;flex-wrap:wrap;gap:20px;
+}
+.shop-head h2{font-size:clamp(34px,5vw,58px);}
+.tabs{display:flex;gap:10px;}
+.tab-btn{
+  padding:10px 22px;border:1px solid var(--ink);border-radius:30px;
+  background:transparent;font-family:'Space Mono',monospace;font-size:12px;
+  letter-spacing:.08em;text-transform:uppercase;
+  transition:all .3s var(--ease);
+}
+.tab-btn.active{background:var(--ink);color:var(--paper);}
+
+.product-swiper{padding-bottom:10px;}
+.product-card{
+  background:var(--card);
+  border:1px solid var(--line);
+}
+.product-media{position:relative;overflow:hidden;aspect-ratio:3/4;}
+.product-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);}
+.product-card:hover .product-media img{transform:scale(1.06);}
+.product-badge{
+  position:absolute;top:12px;left:12px;
+  background:var(--thread);color:#fff;
+  font-family:'Space Mono',monospace;font-size:11px;
+  padding:5px 10px;letter-spacing:.06em;text-transform:uppercase;
+}
+.product-info{padding:16px 16px 20px;}
+.product-info .p-cat{
+  font-family:'Space Mono',monospace;font-size:11px;color:var(--ink-soft);
+  text-transform:uppercase;letter-spacing:.08em;
+}
+.product-info h4{
+  font-family:'Archivo',sans-serif;font-weight:700;text-transform:none;
+  font-size:17px;margin:6px 0 8px;letter-spacing:0;
+}
+.p-price{font-family:'Space Mono',monospace;font-size:15px;}
+.p-price .old{text-decoration:line-through;color:var(--ink-soft);margin-right:8px;font-size:13px;}
+.swiper-button-next, .swiper-button-prev{color:var(--ink) !important;}
+.swiper-button-next:after,.swiper-button-prev:after{font-size:20px !important;}
+
+/* =========================================================
+   3. HERO & HERO SPLIT (Διαδοχικά Μπλοκ)
+   ========================================================= */
+.hero {
+  position: relative;
+  width: 100% !important;     /* Αναγκάζει το hero να πιάσει όλο το πλάτος */
+  max-width: 100% !important; /* Σπάει τα όρια του Twenty Twenty-Five */
+  margin: 0 auto !important;  /* Κεντράρει το container αν χρειαστεί */
+  
+  /* Το δικό σου ύψος */
+  height: calc(100vh - 110px); 
+  min-height: 600px;
+  
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Ο κουβάς των κειμένων */
+.hero-content {
+  position: relative;
+  z-index: 10 !important; /* Αυξημένο z-index για να βγει σίγουρα πάνω από το overlay */
+  max-width: 850px;
+  padding: 0 24px;
+}
+
+.hero-title {
+  font-size: clamp(58px, 12vw, 70px);
+  position: relative;
+  display: inline-block;
+  color: var(--paper-2) !important;
+  opacity: 1 !important;              /* Ξεκλειδώνει το opacity */
+  text-shadow: 0 3px 18px rgba(0,0,0,0.6) !important; /* Σκιά για βάθος */
+}
+.hero-title .needle-svg {
+  position: absolute;
+  top: 38%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-6deg);
+  width: 60%;
+  max-width: 640px;
+  pointer-events: none;
+}
+.hero-title .needle-svg path {
+  fill: none; stroke: var(--ink); stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+}
+.hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: var(--card) !important;
+  opacity: 1 !important;              /* Ξεκλειδώνει το opacity */
+  max-width: 520px;
+  margin: 22px auto 34px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6) !important;
+}
+.hero-cta {
+  display: flex; 
+  gap: 16px; 
+  justify-content: center; 
+  flex-wrap: wrap !important;
+  opacity: 1 !important;              /* Ξεκλειδώνει τα κουμπιά */
+}
+
+/* 🛠️ ΔΙΟΡΘΩΣΗ: Προσθήκη !important και στα Hovers για να δουλεύουν οι εναλλαγές */
+.hero .btn {
+  border-color: #f4f4f4 !important;
+  color: #000000 !important;
+  background: #ffc687;
+  opacity: 1 !important;
+}
+.hero .btn.solid {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+.hero .btn.solid:hover {
+  background: var(--thread) !important;
+  border-color: var(--thread) !important;
+  color: #ffffff !important;
+}
+.hero .btn:not(.solid):hover {
+  background: #ffffff !important;
+  color: #17130F !important;
+}
+
+/* To Background Βίντεο (Κλειδώνει αυστηρά στο πρώτο θέμα) */
+/* Το CSS για το Βίντεο - Με έξυπνο κροπάρισμα για να κρύβει το watermark */
+.hero-bg-video {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  
+  /* 👈 Δίνουμε 5% παραπάνω ύψος στο βίντεο ώστε να μεγαλώσει και να σπρώξει το watermark εκτός οθόνης */
+  height: 125%; 
+  
+  /* 👈 Στοιχίζουμε το βίντεο στην κορυφή (top) ώστε όλο το περίσσιο ύψος (μαζί με το watermark) να βγει από κάτω */
+  object-position: center top; 
+  
+  object-fit: cover; 
+  z-index: 1; 
+  pointer-events: none; 
+}
+.hero-video-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.35) !important; /* Ελαφρώς πιο ενισχυμένο overlay για καλύτερη αντίθεση */
+  z-index: 2; /* Πίσω από το content, πάνω από το video */
+}
+
+/* ---------------------------------------------------------
+   ΔΕΥΤΕΡΟ ΘΕΜΑ: HERO SPLIT (Απλώνει αυτόνομα από κάτω)
+   --------------------------------------------------------- */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0; /* 🛠️ Διορθώθηκε από 2px σε 0 για να έρθει το κάτω μέρος στην ίδια ευθεία */
+  background: var(--ink);
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hero-panel {
+  position: relative;
+  /* Δίνει σταθερό, όμορφο responsive ύψος στις εικόνες ανάλογα με την οθόνη */
+  height: 75vh; 
+  min-height: 950px;
+  max-height: 700px;
+  overflow: hidden;
+  isolation: isolate;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  /* 🛠️ ΠΡΟΣΘΗΚΗ: Κλείδωμα opacity και μετατόπισης (με διόρθωση από 3.px σε 3px) */
+  opacity: 0.9346 !important;
+  transform: translate(0px, 3px) !important;
+  translate: none;
+  rotate: none;
+  scale: none;
+}
+
+.hero-panel img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  transition: transform .8s var(--ease);
+  display: block;
+}
+
+.hero-panel:hover img { 
+  transform: scale(1.05); 
+}
+
+/* Το container των κειμένων */
+.hero-panel .panel-tag {
+  position: absolute; 
+  left: 40px; 
+  bottom: 40px;
+  z-index: 4;
+  width: calc(100% - 80px); /* Δίνει χώρο στα κείμενα να απλωθούν σωστά */
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 01 - WOMEN / 02 - MEN (Μικρά γράμματα κάτω αριστερά) */
+.hero-panel .panel-tag .eyebrow { 
+  color: #ffc687 !important; /* 🛠️ Διορθώθηκε το τυπογραφικό #fffff */
+  opacity: 1 !important; /* Μένει πάντα καθαρό και ορατό */
+  visibility: visible !important;
+}
+
+/* ΓΥΝΑΙΚΕΙΑ / ΑΝΔΡΙΚΑ (Μεγάλα έντονα γράμματα) */
+.hero-panel .panel-tag h3 { 
+  font-size: clamp(28px, 4vw, 44px); 
+  color: #ffffff !important; /* 🛠️ Διορθώθηκε το τυπογραφικό #fffff */
+  opacity: 0.93 !important;      /* 🛠️ Φωτεινά και έντονα, αλλά κρατάνε το split-opacity visual που θες */
+  visibility: visible !important;
+  /* ❌ Αφαιρέθηκε το opacity: 1 !important για να επιτρέψουμε στο GSAP 
+     να κάνει το fade-in και να κρατήσει την ημιδιαφάνεια που θες */
+}
+
+/* Το σκοτεινό overlay στην εικόνα για να ξεχωρίζουν τα λευκά γράμματα */
+.hero-panel::after {
+  content: ""; 
+  position: absolute; 
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.65) 100%) !important;
+  z-index: 2;
+  opacity: 1 !important; /* Κλειδώνει το gradient για να υπάρχει πάντα αντίθεση */
+}
+
+/* 🛠️ ΝΕΟΣ ΚΕΝΤΡΙΚΟΣ ΤΙΤΛΟΣ (Όπως στο image_89eade.png) */
+.hero-panel .center-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Απόλυτο κεντράρισμα */
+  z-index: 3; /* Πάνω από την εικόνα και το overlay, κάτω από το panel-tag αν χρειαστεί */
+  color: #ffffff;
+  font-size: clamp(36px, 6vw, 72px); /* Δυναμικό μέγεθος ανάλογα με την οθόνη */
+  font-weight: 400; /* Ή 500 ανάλογα με τη γραμματοσειρά σου */
+  letter-spacing: -0.02em;
+  pointer-events: none; /* Για να μην εμποδίζει το κλικ στο link */
+  text-align: center;
+  width: 90%;
+  margin: 0;
+  opacity: 0.9; /* Ελαφριά διαφάνεια για blend με το background */
+}
+
+/* =========================================================
+   ΚΛΕΙΔΩΜΑ FULL WIDTH & ΔΙΟΡΘΩΣΗ ΔΕΞΙΟΥ ΚΕΝΟΥ (PATCH)
+   ========================================================= */
+
+/* 1. Αναγκάζουμε το ίδιο το site να μην επιτρέπει οριζόντιο σπάσιμο/κενό */
+html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.elementor-12 .elementor-element.elementor-element-10ac147 {
+    margin: -12px -11px calc(var(--kit-widget-spacing, 0px) + -11px) 0px !important;
+}
+
+/* 2. Σπάσιμο των FSE Containers του Twenty Twenty-Five χωρίς 100vw κινδύνους */
+.wp-site-blocks, 
+.wp-block-post-content, 
+.entry-content,
+main#primary,
+.elementor-section-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* 3. Διόρθωση του Hero: Χρήση ποσοστών (%) αντί για vw για να μην "κλωτσάει" η scrollbar */
+.hero, .hero-split {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* 4. Αν ο Elementor έχει "Boxed" ρυθμίσεις στον Container, τον εξαναγκάζουμε σε Full */
+.elementor-container, .e-con, .e-con-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;margin:0;padding:0;}
+button{font-family:inherit;cursor:pointer;}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px;}
+h1,h2,h3{
+  font-family:'Archivo',sans-serif;
+  font-weight:900;
+  letter-spacing:-0.02em;
+  line-height:0.95;
+  margin:0;
+  text-transform:uppercase;
+}
+.eyebrow{
+  font-family:'Space Mono',monospace;
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#ffc687;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.eyebrow::before{
+  content:"";
+  width:18px;height:1px;background:var(--thread);
+  display:inline-block;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:16px 30px;
+  font-family:'Space Mono',monospace;
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  border:1.5px solid var(--ink);
+  border-radius:var(--radius);
+  background:#bb8e1eb5;
+  transition:background .35s var(--ease), color .35s var(--ease);
+}
+.btn.solid{background:var(--ink);color:var(--paper);}
+.btn.solid:hover{background:var(--thread);border-color:var(--thread);}
+.btn:not(.solid):hover{background:var(--gold);color:var(--paper);}
+
+/* running-stitch signature divider */
+.stitch{
+  height:14px;
+  width:100%;
+  background-image:repeating-linear-gradient(
+    90deg, var(--ink) 0 10px, transparent 10px 20px
+  );
+  background-size:20px 1.5px;
+  background-repeat:repeat-x;
+  background-position:center;
+  opacity:.55;
+}
+.stitch.thread{background-image:repeating-linear-gradient(90deg, var(--thread) 0 10px, transparent 10px 20px);opacity:.8;}
+
+/* =========================================================
+   1. TOP MARQUEE
+   ========================================================= */
+.marquee{
+  background:var(--ink);
+  color:var(--paper);
+  overflow:hidden;
+  white-space:nowrap;
+  padding:9px 0;
+}
+.marquee span{
+  display:inline-block;
+  font-family:'Space Mono',monospace;
+  font-size:12px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  padding-right:60px;
+  animation:scrollmarquee 26s linear infinite;
+}
+@keyframes scrollmarquee{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+
+/* =========================================================
+   2. HEADER
+   ========================================================= */
+header{
+  position:sticky;top:0;z-index:50;
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 32px;
+}
+.nav .logo img{height:76px;width:auto;}
+.nav-links{display:flex;gap:34px;}
+.nav-links a{
+  font-family:'Space Mono',monospace;
+  font-size:13px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  position:relative;
+  padding-bottom:4px;
+}
+.nav-links a::after{
+  content:"";
+  position:absolute;left:0;bottom:0;
+  width:0%;height:1.5px;background:var(--thread);
+  transition:width .3s var(--ease);
+}
+.nav-links a:hover::after{width:100%;}
+.nav-icons{display:flex;align-items:center;gap:20px;}
+.nav-icons a, .nav-icons button{background:none;border:none;color:var(--ink);}
+.nav-icons svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:1.6;}
+.burger{display:none;}
+
+@media(max-width:900px){
+  .nav-links{display:none;}
+  .burger{display:block;}
+}
+
+
