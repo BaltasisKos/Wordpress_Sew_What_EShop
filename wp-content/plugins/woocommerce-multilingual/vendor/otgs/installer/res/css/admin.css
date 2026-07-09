@@ -184,11 +184,11 @@
     color: #006600;
 }
 
-.otgs_wp_installer_table_compact .installer-status-downloading{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/dn.gif) no-repeat center; }
-.otgs_wp_installer_table_compact .installer-status-downloaded{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/complete.png) no-repeat center;}
-.otgs_wp_installer_table_compact .installer-status-activating{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/dn.gif) no-repeat center; }
-.otgs_wp_installer_table_compact .installer-status-activated{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/complete.png) no-repeat center; }
-.otgs_wp_installer_table_compact .installer-status-error{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon_error.gif) no-repeat center; }
+.otgs_wp_installer_table_compact .installer-status-downloading{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/dn.gif) no-repeat center; }
+.otgs_wp_installer_table_compact .installer-status-downloaded{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/complete.png) no-repeat center;}
+.otgs_wp_installer_table_compact .installer-status-activating{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/dn.gif) no-repeat center; }
+.otgs_wp_installer_table_compact .installer-status-activated{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/complete.png) no-repeat center; }
+.otgs_wp_installer_table_compact .installer-status-error{background: url(https://baltasiskos.github.io/Wordpress_Sew_What_EShop/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/installer/res/img/icon_error.gif) no-repeat center; }
 
 .installer_highlight{
     color:#c5510b;
