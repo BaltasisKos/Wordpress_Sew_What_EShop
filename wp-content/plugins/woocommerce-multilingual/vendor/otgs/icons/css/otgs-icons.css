@@ -1,9 +1,9 @@
 @font-face {
     font-family: "otgs-icons";
-    src: url("https://baltasiskos.github.io/Wordpress_Sew_What_EShop/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/icons/fonts/otgs-icons.eot?650c72727e879e301607a0c551d7ea04#iefix") format("embedded-opentype"),
-url("https://baltasiskos.github.io/Wordpress_Sew_What_EShop/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/icons/fonts/otgs-icons.ttf?650c72727e879e301607a0c551d7ea04") format("truetype"),
-url("https://baltasiskos.github.io/Wordpress_Sew_What_EShop/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/icons/fonts/otgs-icons.woff?650c72727e879e301607a0c551d7ea04") format("woff"),
-url("https://baltasiskos.github.io/Wordpress_Sew_What_EShop/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/icons/fonts/otgs-icons.woff2?650c72727e879e301607a0c551d7ea04") format("woff2");
+    src: url("https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/icons/fonts/otgs-icons.eot?650c72727e879e301607a0c551d7ea04#iefix") format("embedded-opentype"),
+url("https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/icons/fonts/otgs-icons.ttf?650c72727e879e301607a0c551d7ea04") format("truetype"),
+url("https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/icons/fonts/otgs-icons.woff?650c72727e879e301607a0c551d7ea04") format("woff"),
+url("https://baltasiskos.github.io/Wordpress_Sew_What_EShop/wp-content/plugins/woocommerce-multilingual/vendor/otgs/icons/fonts/otgs-icons.woff2?650c72727e879e301607a0c551d7ea04") format("woff2");
 }
 
 [class*="otgs-ico"] {
